@@ -1,1 +1,142 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super 888</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: black;
+      transition: all .8s ease-out;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 18px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .main {
+      flex-grow: 1;
+      display: flex;
+    }
+    .logo {
+      width: 200px;
+      padding: .8em;
+    }
+    .logo img {
+      width: 100%;
+    }
+    .content {
+      padding: 5em 3em;
+      width: 68vw;
+    }
+    .footer {
+      text-align: center;
+      padding: 1em .8em;
+      background: rgba(255, 255, 255, .5);
+      color: black;
+      font-size: .8em;
+      line-height: 1.5em;
+      display: flex;
+      justify-content: center;
+      cursor: default;
+    }
+    dl, dt, dd {
+      margin: 0;
+      padding: 0;
+    }
+    dt {
+      background: white;
+      color: black;
+      padding: .25em;
+      display: inline-block;
+      transform: skew(-8deg) translate(-8px, -8px);
+      font-weight: 900;
+      font-size: 1.8em;
+    }
+    dd {
+      margin-bottom: 5em;
+      background: black;
+      color: white;
+      padding: .8em;
+      line-height: 1.8em;
+      transform: skew(2deg);
+    }
+    .select-all {
+      user-select: all;
+    }
+    a {
+      color: white;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    @media (max-width: 1024px) {
+      .main {
+        flex-direction: column;
+      }
+      .logo {
+        align-self: center;
+      }
+      .content {
+        width: 100%;
+      }
+      .footer {
+        flex-direction: column;
+      }
+    }
+    @media (min-width: 1024px) {
+      .footer > div:not(:last-child)::after {
+        content: '—';
+        margin: 0 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="main">
+      <div class="logo">
+        <img src="./logo-b.png" alt="Super 888 logo">
+      </div>
+      <div class="content">
+        <dl>
+          <dt>This is us!</dt>
+          <dd>Our company is here to provide services for people who need luxury products for great prices and as quickly as possible.</dd>
+
+          <dt>Amazing personal shoppers:</dt>
+          <dd>We have a team of professional buyers who can get you whatever you're after.</dd>
+
+          <dt>Hello?</dt>
+          <dd>Do you have a question? Are you interested in our services? <script language="JavaScript">user = 'emma';site = 'super888.co.uk';document.write('Send a message to <a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</script></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="footer">
+      <!-- Super 888 Ltd &mdash; Registered in England and Wales &mdash; Company number 12937328 &mdash; VAT number 389253455 -->
+      <div><strong>Super 888 Ltd</strong></div>
+      <div>Registered in England and Wales</div>
+      <div>Company number <span class="select-all">12937328</span></div>
+      <div>VAT number <span class="select-all">389253455</span></div>
+    </div>
+  </div>
+  
+<script>
+var colours = ['#ff5f38', '#ff47cb', '#9947ff', '#0a5eff', '#47daff', '#52d802', '#ffd700'];
+var randomColour = colours[~~(Math.random() * colours.length)]
+setTimeout(function(){
+  document.body.style.background = randomColour
+}, 188);
+</script>
+</body>
+</html>
